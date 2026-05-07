@@ -11,23 +11,33 @@
   />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
   <header class="site-header">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Competencias</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#metodologia">Cómo trabajo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
     <div class="hero-content">
-      <p class="hero-label">Ingeniero QA | SDET | DevSecOps</p>
-      <h1 class="hero-title">Construyendo calidad de software confiable desde el diseño hasta la entrega.</h1>
+      <p class="hero-label">Soy Ingeniero QA | SDET | DevSecOps</p>
+      <h1 class="hero-title">Aseguro calidad de software desde el diseño hasta la entrega.</h1>
       <p class="hero-text">
-        Desarrollo soluciones de prueba y automatización en entornos complejos, con foco en estabilidad, seguridad y eficiencia.
+        Aplico pruebas y automatización en entornos complejos de banca, defensa, administraciones públicas y ecommerce.
       </p>
-      <a href="#contacto" class="hero-cta">Hablemos de QA</a>
+      <a href="#contacto" class="hero-cta" aria-label="Ir a la sección de contacto">Hablemos de QA</a>
     </div>
   </header>
 
-  <main class="page-main">
-    <section id="sobre-mi" class="section about">
+  <main id="main-content" class="page-main">
+    <section id="sobre-mi" class="section about" aria-labelledby="sobre-mi-title">
       <div class="section-header">
-        <h2>Sobre mí</h2>
+        <h2 id="sobre-mi-title">Sobre mí</h2>
         <p class="section-intro">
-          Soy un profesional con experiencia en testing y desarrollo, enfocado en aplicar prácticas modernas de QA y DevSecOps para entregar software con alta confianza.
+          Soy especialista en testing y desarrollo con experiencia en banca, defensa, administraciones públicas y ecommerce; aplico prácticas modernas de QA, automatización y DevSecOps.
         </p>
       </div>
       <div class="about-grid">
@@ -40,17 +50,17 @@
         <article class="about-card">
           <h3>Lo que aporto</h3>
           <ul>
-            <li>Validez de funcionalidades críticas</li>
-            <li>Reducción de errores en entornos de producción</li>
-            <li>Integración de calidad en pipelines DevSecOps</li>
+            <li>Aseguro la validez de funcionalidades críticas</li>
+            <li>Reduzco errores antes del lanzamiento</li>
+            <li>Integro calidad en pipelines DevSecOps</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="habilidades" class="section skills">
+    <section id="habilidades" class="section skills" aria-labelledby="habilidades-title">
       <div class="section-header">
-        <h2>Competencias clave</h2>
+        <h2 id="habilidades-title">Competencias clave</h2>
       </div>
       <div class="skills-grid">
         <article class="skill-card">
@@ -96,9 +106,9 @@
       </div>
     </section>
 
-    <section id="experiencia" class="section experience">
+    <section id="experiencia" class="section experience" aria-labelledby="experiencia-title">
       <div class="section-header">
-        <h2>Experiencia profesional</h2>
+        <h2 id="experiencia-title">Experiencia profesional</h2>
       </div>
       <div class="experience-list">
         <article class="experience-item">
@@ -120,35 +130,35 @@
       </div>
     </section>
 
-    <section id="metodologia" class="section methodology">
+    <section id="metodologia" class="section methodology" aria-labelledby="metodologia-title">
       <div class="section-header">
-        <h2>Cómo trabajo</h2>
+        <h2 id="metodologia-title">Cómo trabajo</h2>
       </div>
       <div class="methodology-grid">
         <article class="methodology-step">
           <h3>Colaboración</h3>
-          <p>Trabajo estrechamente con desarrollo y producto para definir criterios de calidad desde el inicio.</p>
+          <p>Colaboro con desarrollo y producto para definir criterios de calidad desde el inicio.</p>
         </article>
         <article class="methodology-step">
           <h3>Automatización</h3>
-          <p>Aplico pruebas automatizadas en ciclos repetibles para acelerar la detección de fallos.</p>
+          <p>Aplico pruebas automatizadas en ciclos repetibles para detectar fallos antes del lanzamiento.</p>
         </article>
         <article class="methodology-step">
           <h3>Seguridad</h3>
-          <p>Integración de controles de calidad en pipelines DevSecOps para entregas más robustas.</p>
+          <p>Integro controles de calidad en pipelines DevSecOps para entregas más robustas.</p>
         </article>
       </div>
     </section>
 
-    <section id="contacto" class="section contact">
+    <section id="contacto" class="section contact" aria-labelledby="contacto-title">
       <div class="section-header">
-        <h2>Contacto</h2>
-        <p>¿Necesitas apoyo en QA, automatización o DevSecOps? Estoy disponible para colaborar en proyectos con enfoque en calidad.</p>
+        <h2 id="contacto-title">Contacto</h2>
+        <p>Si necesitas apoyo en QA, automatización o DevSecOps, puedo colaborar en tu próximo proyecto con enfoque en calidad.</p>
       </div>
       <div class="contact-card">
-        <p><strong>Email:</strong> victorgonizq70@gmail.com</p>
-        <p><strong>Teléfono:</strong> (+34) 608 846 714</p>
-        <a href="mailto:victorgonizq70@gmail.com" class="contact-button">Enviar mensaje</a>
+        <p><strong>Email:</strong> <a href="mailto:victorgonizq70@gmail.com" aria-label="Enviar correo a Víctor González">victorgonizq70@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> <a href="tel:+34608846714" aria-label="Llamar a Víctor González">(+34) 608 846 714</a></p>
+        <a href="mailto:victorgonizq70@gmail.com" class="contact-button" aria-label="Enviar un correo para contacto profesional">Enviar mensaje</a>
       </div>
     </section>
   </main>

@@ -1,13 +1,13 @@
 :root {
-  --bg: #0f172a;
-  --surface: #19243d;
-  --surface-soft: #24314f;
-  --text: #f8fafc;
-  --muted: #cbd5e1;
-  --accent: #4f8cff;
-  --accent-hover: #6ba4ff;
-  --border: rgba(255, 255, 255, 0.1);
-  --shadow: 0 18px 50px rgba(15, 23, 42, 0.18);
+  --bg: #080606;
+  --surface: #111111;
+  --surface-soft: #1f1b1b;
+  --text: #f5f1ef;
+  --muted: #b8b0ac;
+  --accent: #ff3b3b;
+  --accent-hover: #ff5e5e;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
 }
 
 *,
@@ -23,8 +23,8 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, rgba(79, 140, 255, 0.12), transparent 30%),
-    linear-gradient(180deg, #08101f 0%, #0f172a 100%);
+  background: radial-gradient(circle at top, rgba(255, 59, 59, 0.12), transparent 30%),
+    linear-gradient(180deg, #050404 0%, #0b0909 100%);
   color: var(--text);
   line-height: 1.65;
   min-height: 100vh;
@@ -40,6 +40,22 @@ a {
   font: inherit;
 }
 
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--accent);
+  color: #111;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  z-index: 50;
+  transition: left 0.25s ease;
+}
+
+.skip-link:focus-visible {
+  left: 1rem;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -49,6 +65,33 @@ a:hover,
 a:focus-visible {
   color: var(--accent-hover);
   outline: none;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--muted);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+  color: var(--accent-hover);
 }
 
 .site-header {
@@ -93,7 +136,7 @@ a:focus-visible {
   background: var(--accent);
   color: #fff;
   border-radius: 999px;
-  box-shadow: 0 12px 30px rgba(79, 140, 255, 0.28);
+  box-shadow: 0 12px 30px rgba(255, 59, 59, 0.28);
   transition: background 0.25s ease, transform 0.25s ease;
 }
 

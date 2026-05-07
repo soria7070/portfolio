@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  validate-static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install html-validator and stylelint
+        run: |
+          npm install -g html-validate stylelint stylelint-config-standard
+
+      - name: Validate HTML
+        run: |
+          html-validate index.html
+
+      - name: Validate CSS
+        run: |
+          echo '{"extends": "stylelint-config-standard", "rules": {"color-no-invalid-hex": true}}' > .stylelintrc.json
+          stylelint "**/*.css"
+
+      - name: Basic static analysis (optional)
+        run: |
+          npm install -g markdownlint-cli
+          echo "*.md" > .markdownlint-cli2.json
+          markdownlint README.md || true
