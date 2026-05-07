@@ -2,203 +2,398 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Víctor González Izquierdo | QA Automation & DevSecOps</title>
-  <meta
-    name="description"
-    content="Landing de Víctor González Izquierdo, Ingeniero QA con enfoque en automatización, DevSecOps e IA para soluciones empresariales." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Víctor González Izquierdo · Dev Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Saltar al contenido</a>
-  <header class="site-header">
-    <div class="brand-bar">
-      <span class="brand-name">VGQA</span>
-      <nav class="site-nav" aria-label="Navegación principal">
-        <ul class="nav-list">
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#formacion">Formación</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="hero-panel">
-      <div class="hero-copy">
-        <p class="hero-label">Ingeniero QA | SDET | DevSecOps</p>
-        <h1 class="hero-title">Aseguro calidad y entrega segura en software crítico.</h1>
-        <p class="hero-text">
-          Trabajo con prácticas de automatización, pipelines DevSecOps e inteligencia de calidad para entornos de banca, defensa, administraciones públicas y ecommerce.
-        </p>
-        <div class="hero-actions">
-          <a href="#contacto" class="hero-cta">Contactar</a>
-          <a href="#proyectos" class="secondary-cta">Ver proyectos</a>
-        </div>
-      </div>
-      <div class="hero-summary">
-        <div class="summary-item">
-          <span>03/2026</span>
-          <p>Testing profesional en Indra</p>
-        </div>
-        <div class="summary-item">
-          <span>03/2025</span>
-          <p>Desarrollo web con Angular y Spring Boot</p>
-        </div>
-        <div class="summary-item">
-          <span>Calidad</span>
-          <p>Reduzco errores antes de despliegues</p>
-        </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <span class="nav-logo">VGI<span class="dot">.</span></span>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#competencias">Skills</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-content">
+      <p class="hero-tag reveal-up"><span class="mono">&lt;junior dev /&gt;</span> · Full Stack</p>
+      <h1 class="hero-title reveal-up">
+        <span class="line">Víctor</span>
+        <span class="line accent-line">González</span>
+        <span class="line">Izquierdo</span>
+      </h1>
+      <p class="hero-sub reveal-up">Construyo interfaces y servicios que importan.<br>Backend · Frontend · Testing · Mobile</p>
+      <div class="hero-actions reveal-up">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn-ghost">Hablemos</a>
       </div>
     </div>
-  </header>
+    <div class="hero-side reveal-right">
+      <div class="status-badge">
+        <span class="pulse"></span> Disponible para trabajar
+      </div>
+      <div class="tech-pills">
+        <span class="pill">Angular</span>
+        <span class="pill">Spring Boot</span>
+        <span class="pill">React</span>
+        <span class="pill">Kotlin</span>
+        <span class="pill">TypeScript</span>
+        <span class="pill">Java</span>
+        <span class="pill">PHP</span>
+        <span class="pill">SQL</span>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="scroll-hint">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
 
-  <main id="main-content" class="page-main">
-    <section id="sobre-mi" class="section about" aria-labelledby="sobre-mi-title">
-      <div class="section-header">
-        <h2 id="sobre-mi-title">Sobre mí</h2>
-        <p class="section-intro">
-          Soy ingeniero QA en formación con experiencia real en testing funcional, automatización y DevSecOps. Aporto rapidez de adaptación y enfoque pragmático para que el software funcione bien desde el primer despliegue.
-        </p>
+  <!-- SOBRE MÍ -->
+  <section class="section sobre" id="sobre-mi">
+    <div class="container">
+      <div class="section-label reveal-up"><span class="mono">01.</span> Sobre mí</div>
+      <div class="sobre-grid">
+        <div class="sobre-text reveal-up">
+          <h2 class="section-title">Programador junior<br>con visión <span class="accent">Full Stack</span></h2>
+          <p>Recién finalizado mis estudios y prácticas profesionales, busco una oportunidad donde pueda seguir aprendiendo y crecer como desarrollador.</p>
+          <p>Tengo una buena base en un gran número de tecnologías, lo que me permite desenvolverme tanto en desarrollo backend como frontend, además de tener experiencia con el desarrollo de aplicaciones móviles y en testing.</p>
+          <p>Me gusta trabajar en equipo, aprender de los demás y enfrentar nuevos retos con iniciativa desde el primer día.</p>
+          <div class="sobre-info">
+            <div class="info-item">
+              <span class="info-label">Ubicación</span>
+              <span>Coslada, Madrid</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Idiomas</span>
+              <span>Español nativo · Inglés B2</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Disponibilidad</span>
+              <span>Presencial · Híbrida · Remota</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-right reveal-right">
+          <div class="card-stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Prácticas profesionales</span>
+          </div>
+          <div class="card-stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Tecnologías dominadas</span>
+          </div>
+          <div class="card-stat">
+            <span class="stat-num">B2</span>
+            <span class="stat-label">Certificado de inglés Cambridge</span>
+          </div>
+          <div class="card-links">
+            <a href="https://www.linkedin.com/in/victorgonizq" target="_blank" class="ext-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://soria7070.github.io/portfolio/" target="_blank" class="ext-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="about-grid">
-        <article class="about-card">
-          <h3>Qué hago</h3>
-          <p>Diseño y ejecuto pruebas que detectan fallos tempranos y mantienen la estabilidad de sistemas en producción.</p>
-        </article>
-        <article class="about-card">
-          <h3>Cómo lo hago</h3>
-          <p>Combino automatización, revisión de resultados y validación en pipelines para asegurar entregas consistentes.</p>
-        </article>
-        <article class="about-card">
-          <h3>Para quién</h3>
-          <p>Apoyo a equipos que necesitan calidad en proyectos de banca, defensa, administraciones públicas y comercio electrónico.</p>
-        </article>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="habilidades" class="section skills" aria-labelledby="habilidades-title">
-      <div class="section-header">
-        <h2 id="habilidades-title">Habilidades</h2>
-      </div>
+  <!-- COMPETENCIAS Y TECNOLOGÍAS -->
+  <section class="section competencias" id="competencias">
+    <div class="container">
+      <div class="section-label reveal-up"><span class="mono">02.</span> Competencias & Tecnologías</div>
+      <h2 class="section-title reveal-up">Stack técnico y<br>habilidades <span class="accent">clave</span></h2>
+
       <div class="skills-grid">
-        <article class="skill-card">
-          <h3>QA Automation</h3>
-          <ul>
-            <li>Pruebas funcionales y de regresión</li>
-            <li>Automatización de casos críticos</li>
-            <li>Validación continua en entornos reales</li>
-          </ul>
-        </article>
-        <article class="skill-card">
-          <h3>DevSecOps</h3>
-          <ul>
-            <li>Pipelines seguros y repetibles</li>
-            <li>Integración de calidad en despliegues</li>
-            <li>Revisión de artefactos y resultados</li>
-          </ul>
-        </article>
-        <article class="skill-card">
-          <h3>IA</h3>
-          <ul>
-            <li>Soporte inteligente en pruebas</li>
-            <li>Análisis de datos para mejorar QA</li>
-            <li>Automatización con enfoque predictivo</li>
-          </ul>
-        </article>
-        <article class="skill-card">
-          <h3>Tecnologías</h3>
-          <ul>
-            <li>Java, JavaScript, TypeScript</li>
-            <li>Angular, React, Spring Boot</li>
-            <li>HTML, CSS, SQL</li>
-          </ul>
-        </article>
-        <article class="skill-card">
-          <h3>Herramientas</h3>
-          <ul>
-            <li>VS Code</li>
-            <li>Android Studio</li>
-            <li>SQL Server / MySQL Workbench</li>
-          </ul>
-        </article>
-      </div>
-    </section>
 
-    <section id="experiencia" class="section experience" aria-labelledby="experiencia-title">
-      <div class="section-header">
-        <h2 id="experiencia-title">Experiencia</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-date">03/2026 – Actualidad</span>
-          <h3>Indra</h3>
-          <p>Prácticas en testing, diseño de pruebas funcionales y validación de incidencias en aplicaciones críticas.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-date">03/2025 – 06/2025</span>
-          <h3>NunduSoft</h3>
-          <p>Desarrollo web con Angular y Spring Boot en microservicios, aplicando buenas prácticas y entregas mantenibles.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="proyectos" class="section projects" aria-labelledby="proyectos-title">
-      <div class="section-header">
-        <h2 id="proyectos-title">Proyectos destacados</h2>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3>Automatización de pruebas</h3>
-          <p>Implementé casos de prueba automatizados para flujos críticos y reduje la exposición a errores en entregas frecuentes.</p>
-          <div class="project-tags"><span>QA</span><span>Automatización</span><span>Pipeline</span></div>
-        </article>
-        <article class="project-card">
-          <h3>Pipeline seguro</h3>
-          <p>Diseñé una integración DevSecOps ligera que incorpora validación temprana y control de calidad en cada build.</p>
-          <div class="project-tags"><span>DevSecOps</span><span>GitHub Actions</span><span>Seguridad</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="formacion" class="section education" aria-labelledby="formacion-title">
-      <div class="section-header">
-        <h2 id="formacion-title">Formación</h2>
-      </div>
-      <div class="education-grid">
-        <article class="education-card">
-          <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
-          <p>IES Luis Braille · 2025 – Actualidad</p>
-        </article>
-        <article class="education-card">
-          <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
-          <p>IES Luis Braille · 2023 – 2025</p>
-        </article>
-        <article class="education-card">
-          <h3>Inglés B2</h3>
-          <p>Cambridge · 2024</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contacto" class="section contact" aria-labelledby="contacto-title">
-      <div class="section-header">
-        <h2 id="contacto-title">Contacto</h2>
-        <p>¿Quieres mejorar la calidad de tu software con un enfoque práctico y seguro? Hablemos.</p>
-      </div>
-      <div class="contact-card">
-        <p><strong>Email:</strong> <a href="mailto:victorgonizq70@gmail.com">victorgonizq70@gmail.com</a></p>
-        <p><strong>Teléfono:</strong> <a href="tel:+34608846714">(+34) 608 846 714</a></p>
-        <div class="contact-actions">
-          <a href="mailto:victorgonizq70@gmail.com" class="contact-button">Enviar correo</a>
-          <a href="#habilidades" class="secondary-button">Ver habilidades</a>
+        <div class="skill-card reveal-up" style="--delay:0.1s">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span>Java</span><span>Spring Boot</span><span>PHP</span><span>SQL</span><span>Microservicios</span>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>Víctor González Izquierdo · QA Automation · SDET · DevSecOps</p>
+        <div class="skill-card reveal-up" style="--delay:0.2s">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span>Angular</span><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.3s">
+          <div class="skill-icon">📱</div>
+          <h3>Mobile</h3>
+          <div class="skill-tags">
+            <span>Kotlin</span><span>Android</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.4s">
+          <div class="skill-icon">🧪</div>
+          <h3>Testing & QA</h3>
+          <div class="skill-tags">
+            <span>Planes de prueba</span><span>Testing funcional</span><span>QA</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.5s">
+          <div class="skill-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span>Trabajo en equipo</span><span>Aprendizaje continuo</span><span>Iniciativa</span><span>Resolución de problemas</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.6s">
+          <div class="skill-icon">🌍</div>
+          <h3>Idiomas</h3>
+          <div class="skill-tags">
+            <span>Español nativo</span><span>Inglés B2 Cambridge</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="section experiencia" id="experiencia">
+    <div class="container">
+      <div class="section-label reveal-up"><span class="mono">03.</span> Experiencia Profesional</div>
+      <h2 class="section-title reveal-up">Trayectoria y<br>formación <span class="accent">práctica</span></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">03/2026 — Actualidad</div>
+          <div class="timeline-card">
+            <span class="timeline-company">Indra</span>
+            <h3>Prácticas en el departamento de Testing</h3>
+            <p>Desarrollo de planes de pruebas funcionales dentro de uno de los principales grupos tecnológicos del sector en España.</p>
+            <div class="timeline-tags">
+              <span>QA</span><span>Testing funcional</span><span>Planes de prueba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">03/2025 — 06/2025</div>
+          <div class="timeline-card">
+            <span class="timeline-company">NunduSoft</span>
+            <h3>Prácticas como Desarrollador de Aplicaciones Web</h3>
+            <p>Desarrollo de aplicaciones web usando Angular y Spring Boot. Trabajo con microservicios y técnicas de desarrollo de software actuales.</p>
+            <div class="timeline-tags">
+              <span>Angular</span><span>Spring Boot</span><span>Microservicios</span><span>Java</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot timeline-dot--edu"></div>
+          <div class="timeline-date">09/2025 — Actualidad</div>
+          <div class="timeline-card timeline-card--edu">
+            <span class="timeline-company">IES Luis Braille · Madrid</span>
+            <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
+            <p>Especialización en desarrollo web full stack con las últimas tecnologías del sector.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot timeline-dot--edu"></div>
+          <div class="timeline-date">09/2023 — 06/2025</div>
+          <div class="timeline-card timeline-card--edu">
+            <span class="timeline-company">IES Luis Braille · Madrid</span>
+            <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p>Formación en desarrollo multiplataforma: backend, frontend y aplicaciones móviles con Kotlin.</p>
+            <div class="timeline-tags">
+              <span>Java</span><span>Kotlin</span><span>SQL</span><span>Android</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section proyectos" id="proyectos">
+    <div class="container">
+      <div class="section-label reveal-up"><span class="mono">04.</span> Proyectos</div>
+      <h2 class="section-title reveal-up">Lo que he<br><span class="accent">construido</span></h2>
+      <p class="section-sub reveal-up">Aquí van tus proyectos personales o académicos. Actualiza estas tarjetas con tus repos reales de GitHub.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" style="--delay:0.1s">
+          <div class="project-top">
+            <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/soria7070" target="_blank" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Proyecto 01</h3>
+          <p class="project-desc">Añade aquí la descripción de tu primer proyecto. Sustituye este texto con algo real de tu GitHub.</p>
+          <div class="project-tech">
+            <span>Angular</span><span>Spring Boot</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.2s">
+          <div class="project-top">
+            <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/soria7070" target="_blank" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Proyecto 02</h3>
+          <p class="project-desc">Describe aquí tu segundo proyecto. Puede ser una app móvil Android, una API REST, o cualquier cosa que hayas construido.</p>
+          <div class="project-tech">
+            <span>Kotlin</span><span>Android</span><span>Java</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.3s">
+          <div class="project-top">
+            <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/soria7070" target="_blank" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Proyecto 03</h3>
+          <p class="project-desc">Tu tercer proyecto. Puede ser un portfolio, una web estática, un juego, o cualquier cosa que quieras mostrar.</p>
+          <div class="project-tech">
+            <span>React</span><span>TypeScript</span><span>CSS</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta reveal-up">
+        <a href="https://github.com/soria7070" target="_blank" class="btn-ghost">
+          Ver todos en GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <div class="section-label reveal-up"><span class="mono">05.</span> Contacto</div>
+      <div class="contacto-inner">
+        <h2 class="section-title reveal-up">¿Hablamos?<br><span class="accent">Estoy disponible.</span></h2>
+        <p class="contacto-sub reveal-up">Estoy buscando mi primera oportunidad laboral en desarrollo. Si tienes un proyecto o una oferta interesante, escríbeme.</p>
+        <div class="contacto-links reveal-up">
+          <a href="mailto:victorgonizq70@gmail.com" class="contact-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            victorgonizq70@gmail.com
+          </a>
+          <a href="tel:+34608846714" class="contact-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 5.55 5.55l1.12-.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.27 16.92z"/></svg>
+            +34 608 846 714
+          </a>
+          <a href="https://www.linkedin.com/in/victorgonizq" target="_blank" class="contact-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://soria7070.github.io/portfolio/" target="_blank" class="contact-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub Portfolio
+          </a>
+        </div>
+        <a href="mailto:victorgonizq70@gmail.com" class="btn-primary reveal-up">Enviar mensaje →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span class="nav-logo">VGI<span class="dot">.</span></span>
+      <p class="footer-copy">Víctor González Izquierdo · 2026 · Construido con ❤️ y mucho CSS</p>
+    </div>
   </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Burger menu
+    const burger = document.getElementById('burger');
+    const navLinks = document.querySelector('.nav-links');
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      burger.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        burger.classList.remove('active');
+      });
+    });
+
+    // Intersection observer for reveal animations
+    const revealEls = document.querySelectorAll('.reveal-up, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // Tilt effect on skill cards
+    document.querySelectorAll('.skill-card, .project-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(600px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateZ(8px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(600px) rotateY(0) rotateX(0) translateZ(0)';
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
