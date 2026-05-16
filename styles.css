@@ -104,6 +104,18 @@ img { max-width: 100%; display: block; }
   border-color: var(--accent) !important;
 }
 
+.delay-1 {
+  --delay: 0.1s;
+}
+
+.delay-2 {
+  --delay: 0.2s;
+}
+
+.delay-3 {
+  --delay: 0.3s;
+}
+
 .burger {
   display: none;
   flex-direction: column;
